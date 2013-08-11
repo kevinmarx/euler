@@ -130,3 +130,35 @@ function problem9() {
 
   return pyth(1000)
 }
+
+// problem 10
+function problem10() {
+
+  function listPrimes(count) {
+    var primes = []
+    for(var n = 2; n < count; n++) {
+        if(isPrime(n)) {
+            primes.push(n)
+        }
+    }
+    return primes
+  }
+
+  function isPrime(n) {
+    var max = Math.sqrt(n);
+    for(var i = 2;  i <= max;  i++) {
+      if(n % i === 0)
+        return false
+    }
+    return true;
+  }
+
+  var primes = listPrimes(2000000)
+  var sum  = 0
+
+  for (var a = 0; a < primes.length; a++) {
+    sum = sum + primes[a]
+  }
+
+  return sum
+}
