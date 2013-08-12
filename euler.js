@@ -62,12 +62,12 @@ function problem7() {
   }
 
   function isPrime(n) {
-    var max = Math.sqrt(n);
+    var max = Math.sqrt(n)
     for(var i = 2;  i <= max;  i++) {
       if(n % i === 0)
         return false
     }
-    return true;
+    return true
   }
 
   return listPrimes(10001)
@@ -161,12 +161,12 @@ function problem10() {
   }
 
   function isPrime(n) {
-    var max = Math.sqrt(n);
+    var max = Math.sqrt(n)
     for(var i = 2;  i <= max;  i++) {
       if(n % i === 0)
         return false
     }
-    return true;
+    return true
   }
 
   var primes = listPrimes(2000000)
